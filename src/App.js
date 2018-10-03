@@ -80,10 +80,10 @@ class Settings extends React.Component{
 
 	handleZoom(e){
 		//target: #mainPost .row {
-		document.styleSheets[0].cssRules[6].style.width = e.target.value + "%";	
+		document.styleSheets[0].cssRules[5].style.width = e.target.value + "%";	
 		if(!this.state.small){
 			//super hack. target: #mainPost .postOuterContainer{
-			document.styleSheets[0].cssRules[7].style.height = e.target.value + "vh";
+			document.styleSheets[0].cssRules[6].style.height = e.target.value + "vh";
 		}
 		this.setState({zoom:e.target.value});
 	}
@@ -91,17 +91,17 @@ class Settings extends React.Component{
 	handleCheckbox(e){
 		if(e.target.checked) {
 			//target: #mainPost img
-			document.styleSheets[0].cssRules[9].style.height = "auto";
-			document.styleSheets[0].cssRules[9].style.width = "100%";
+			document.styleSheets[0].cssRules[8].style.height = "auto";
+			document.styleSheets[0].cssRules[8].style.width = "100%";
 
 			//target: #mainPost .postOuterContainer{
-			document.styleSheets[0].cssRules[7].style.height = "auto";
+			document.styleSheets[0].cssRules[6].style.height = "auto";
 		} else {
 			//target: #mainPost img
-			document.styleSheets[0].cssRules[9].style.height = "100%";
-			document.styleSheets[0].cssRules[9].style.width = "auto";
+			document.styleSheets[0].cssRules[8].style.height = "100%";
+			document.styleSheets[0].cssRules[8].style.width = "auto";
 			//target: #mainPost .postOuterContainer{
-			document.styleSheets[0].cssRules[7].style.height = this.state.zoom + "vh";
+			document.styleSheets[0].cssRules[6].style.height = this.state.zoom + "vh";
 		}
 		this.setState({small: e.target.checked});
 	}
