@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/reddimage/precache-manifest.736e1935537f6f017a8b0c5cb06ef9e3.js"
+  "/reddimage/precache-manifest.5720fed07f82cb2d9104ca424dfeadf2.js"
 );
 
 workbox.clientsClaim();
