@@ -1,3 +1,5 @@
+Made sometime in 2015
+
 # About
 Image based subreddits has a lot of nice content but makes it really hard to browse through because you have to open each link in a new tab. The focus of my web app was to browse the images with a minimum of text while having the image as large as possible. The web app should be a place where you can experience and enjoy pictures that you love rather than a place where you quickly browse through many images without really having a look at any of them (reddit!).
 
